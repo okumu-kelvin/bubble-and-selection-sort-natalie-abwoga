@@ -1,6 +1,6 @@
 # TODO: Implement bubble sort
 def bubble_sort(unsorted_list):
-    arr = unsorted_list.copy()
+    arr = unsorted_list.copy()  # Don't modify the input list
     n = len(arr)
     for i in range(n):
         for j in range(0, n - 1):
