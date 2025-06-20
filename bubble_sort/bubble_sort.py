@@ -5,8 +5,10 @@ def bubble_sort(unsorted_list):
         for j in range(0, n - 1):
             if unsorted_list[j] > unsorted_list[j + 1]:
                 unsorted_list[j], unsorted_list[j + 1] = unsorted_list[j + 1], unsorted_list[j]
+    return unsorted_list
+
 
 # Example of bubble sort in use
-my_list = [5, 2, 9, 1, 5, 6]
-bubble_sort(my_list)
-print("Sorted list:", my_list)
+print(bubble_sort([3, 2, 1]))  # Output: [1, 2, 3]
+print(bubble_sort([4, 5, 3, 4]))  # Output: [3, 4, 4, 5]
+
